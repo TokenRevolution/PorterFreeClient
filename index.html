@@ -1,5 +1,5 @@
 <html><head>
-	<title>LegnanoCoin</title>
+	<title>Porter Free Token</title>
 	<script src="lib/intersection-observer/intersection-observer.js"></script>
 		<style>
 			
@@ -33,6 +33,27 @@
   }
 }
 			@media only screen and (min-width: 1001px) {
+				div#progresso.fade-in-animation{
+				    text-align: center;
+				    margin-top: 10%;
+				    margin-bottom: 5%;
+				    background: rgb(223 0 22 / 70%);
+				    border-radius: 20px;
+				    padding: 5%;
+				    height: 70%;
+				}
+				div#interno-destra{
+					    width: 50%;
+					    FLOAT: LEFT;
+					}
+				div#interno-sinistra{
+				background: rgb(255 255 255 / 70%);
+			    WIDTH: 50%;
+			    margin-left: 50%;
+			    height: 100%;
+			    border-radius: 20px;
+				}
+				
 				.topnav{
 				display: none;
 				}
@@ -40,6 +61,7 @@
 		font-family: Arial, sans-serif;
 		background-image: url(sfondord.png);
 		background-size: 100%;
+		font-variant: unicase;
 		}
 			div.row-left-socials{
 			width: 70%;
@@ -57,6 +79,27 @@
 			}
 			}
 			@media only screen and (max-width: 1000px) {
+				div#progresso.fade-in-animation{
+				    text-align: center;
+				    margin-top: 10%;
+				    margin-bottom: 5%;
+				    background: rgb(223 0 22 / 70%);
+				    border-radius: 20px;
+				    padding: 5%;
+				    height: auto;
+				}
+				div#interno-destra{
+					    width: 50%;
+					    FLOAT: LEFT;
+					}
+				div#interno-sinistra{
+				background: rgb(255 255 255 / 70%);
+			    WIDTH: 50%;
+			    margin-left: 50%;
+			    height: 21%;
+			    border-radius: 20px;
+				}
+				
 				ul#socials {
 					    margin-left: 28%;
 					}
@@ -82,6 +125,7 @@
 		font-family: Arial, sans-serif;
 		background-image: url(sfondord.png);
 		background-size: 100%;
+		font-variant: unicase;
 		}
 		button {
 			    width: 400px;
@@ -847,15 +891,8 @@ initializeClock('clockdiv', deadline);
 	</div>
 	<!--*/end countdown-->
 	<!--*/progress bar-->
-		<div id="progresso" class="fade-in-animation" style="
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    background: rgb(223 0 22 / 70%);
-    border-radius: 20px;
-    padding: 5%;
-">
-<div id="interno-destra">
+		<div id="progresso" class="fade-in-animation">
+			<div id="interno-destra">
 						<label id="progress" for="file" style="
 			    color: white;
 			    font-variant: petite-caps;
@@ -877,7 +914,8 @@ initializeClock('clockdiv', deadline);
 						<Button>Join to Pre-sales</Button>
 </div>
 <div id="interno-sinistra">
-	<h1> How to Buy LegnanoCoin </h1>
+	<h1 style="
+    color: #df0016;"> How to Buy LegnanoCoin </h1>
 </div>
 			</div>
 	<!--*/end progresbar -->
