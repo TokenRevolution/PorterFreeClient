@@ -1,0 +1,1175 @@
+<html><head>
+	<title>LegnanoCoin</title>
+	<script src="lib/intersection-observer/intersection-observer.js"></script>
+		<style>
+			
+
+			@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+	    .fade-in {
+  width: auto;
+  height: auto;
+ 
+}
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-animation {
+    animation: wipe-enter 1s 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-animationtext {
+    animation: wipe-enter 3s 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-animationtext2 {
+    animation: wipe-enter 5s 1;
+  }
+}
+			@media only screen and (min-width: 1001px) {
+				.topnav{
+				display: none;
+				}
+						body{
+		font-family: Arial, sans-serif;
+		background-image: url(sfondord.png);
+		background-size: 100%;
+		}
+			div.row-left-socials{
+			width: 70%;
+			height: 75px;
+			background-color: rgb(0,0,0,0.70)
+			}
+			div.row-right-socials{
+			width: 30%;
+			height: 75px;
+			background-color: rgb(0,0,0,0.70)
+			}
+			img.icon{
+			width: 50px;
+			height: 50px;
+			}
+			}
+			@media only screen and (max-width: 1000px) {
+				ul#socials {
+					    margin-left: 28%;
+					}
+				
+				div.row-left-socials {
+				    width: 100%;
+				    height: 75px;
+				    background-color: rgb(0,0,0,0.70);
+				}
+				div.row-right-socials {
+				    width: 100%;
+				    height: auto;
+				    background-color: rgb(0,0,0,0.70);
+				}
+				img.icon {
+				    width: 100px;
+				    height: 100px;
+				}
+				div#header{
+				display: none;
+				}
+						body{
+		font-family: Arial, sans-serif;
+		background-image: url(sfondord.png);
+		background-size: 100%;
+		}
+		button {
+			    width: 400px;
+			    height: 40px;
+			    background-color: white;
+			    border-radius: 5px;
+			    border: black;
+			    color: black;
+			    box-shadow: 5px 5px 5px;
+			    font-size: 2em;
+			}
+		div#audit {
+			    width: 100%;
+			    height: auto;
+			    background-image: url(tokenrevolution.github.io/);
+			    margin-bottom: 50%;
+			  }
+		div#tokenomics {
+				    width: 100%;
+				    height: auto;
+				    margin-bottom: 20px;
+				    background-image: url(tokenrevolution.github.io/);
+				    margin-top: 50%;
+				}
+		.row-left-alt {
+				    height: 435px !important;
+				    width: 100% !important;
+				    background-color: rgb(255 255 255 / 70%) !important;
+				    text-align: center !important;
+				    margin-top: 50% !important;
+				    margin-bottom: 5%;
+			            border-radius: 20px;
+				}
+		.row-left{
+				    width: 100% !important;
+				    height: 500px !important;
+				    background-color: rgb(223 0 22 / 70%) !important;
+				    text-align: center !important;
+			            border-radius: 20px;
+		}
+		.row-right{
+				    height: 450px !important;
+				    width: 100% !important;
+				    text-align: center !important;
+				    margin-top: 25px !important;
+				    background-color: rgb(255 255 255 / 70%) !important;
+			            border-radius: 20px;
+			      
+		}
+		.row-right-alt{
+				    width: 100% !important;
+				    height: 500px !important;
+				    background-color: rgb(223 0 22 / 70%) !important;
+				    text-align: center !important;
+			            border-radius: 20px;
+		}
+		.contenuto{
+		text-align:center;
+		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 30px;
+		color: white;
+		margin-top: -100px;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+		.contenutoalt{
+		text-align:center;
+		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 30px;
+		color: black;
+		margin-top: -100px;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+		.contenuto1{
+		text-align:center;
+		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 30px;
+		color: white;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+		div#countdown{
+		width: 100%;
+		height: auto;
+		background-image: url('');
+		margin-bottom: 60px;
+		padding-top: 150px;
+		/*https://thumbs.dreamstime.com/b/antecedentes-m%C3%A9dicos-cient%C3%ADficos-de-alta-calidad-en-nanotecnolog%C3%ADa-estructura-molecular-ilustraci%C3%B3n-d-la-celda-cristal-202144520.jpg*/
+		}
+		div#home{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		background-image: url('');
+		}
+			}
+			div#mylinks{
+			    text-align: center;
+			    overflow: hidden;
+			    background-color: rgba(223, 0, 22, 0.9);
+			    position: relative;
+			    width: 80%;
+			    margin-left: 10%;
+			    display: none;
+			    border-top: 3px solid white; 
+			    border-radius: 20px;
+			}
+  .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #df0016;
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: auto;
+    width: auto;
+}
+
+#nav a:hover {
+  background-color: '';
+  color: black;
+}
+
+.active {
+  background-color: red;
+  color: white;
+}
+			
+
+		div#header{
+		width: 100%;
+		height: 90px;
+		background-color: rgb(223 0 22 / 1);
+		padding-top: 45px;
+		margin-bottom: 20px;
+		border-radius: 20px;
+		}
+		div#whitepaper{
+		width: 100%;
+		height: auto;
+			margin-bottom: 20px;
+			background-image: url('');
+			background-repeat: no-repeat;
+		/*<!--https://elysiumpost.com/wp-content/uploads/2020/12/nanotecnologia.png*/
+		}
+		div#tokenomics{
+		width: 100%;
+		height: auto;
+			margin-bottom: 20px;
+				background-image: url('');
+		}
+		div#team{
+		width: 100%;
+		height: auto;
+		background-color:  rgb(223 0 22 / 70%);
+		margin-bottom: 150px;
+		border-radius: 20px;
+		}
+		div#roadmap{
+		width: 100%;
+		height: auto;
+		margin-top: -100px;
+		background-color: rgb(223 0 22 / 70%);
+		margin-bottom: 10px;
+		border-radius: 20px;
+		}
+		div#footer{
+		width: 100%;
+		height: 100px;
+		background-color: rgb(223 0 22 / 1);
+		text-align: center;
+		padding-top: 50px;
+		border-radius: 20px 20px 0px 0px;
+			}
+		.row-superior{
+				    height: 500px;
+				    width: 100%;
+				    text-align: center;
+		}
+		@media only screen and (min-width: 1001px) {
+		.row-left{
+				    width: 60%;
+				    height: 500px;
+				    background-color: rgb(223 0 22 / 70%);
+				    text-align: center;
+				    float:left;
+			            border-radius: 20px;
+		 
+		}
+		.row-right{
+					height: 450px;
+				    width: 40%;
+				    text-align: center;
+					margin-top: 25px;
+					background-color: rgb(255 255 255 / 70%);
+				    float:left;
+				    border-radius: 20px;
+			      
+		}
+		.row-left-alt{
+				    height: 435px;
+				    width: 40%;
+				    background-color: rgb(255 255 255 / 70%);
+				    text-align: center;
+				    margin-top: 25px;		
+				    padding-top: 30px;
+				    float:left;
+				    border-radius: 20px;
+			}
+		.row-right-alt{
+				    width: 60%;
+				    height: 500px;
+				    background-color: rgb(223 0 22 / 70%);
+				    text-align: center;
+			            float:left;
+			            border-radius: 20px;
+		}
+		.contenuto{
+		text-align:center;
+		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 25px;
+		color: white;
+		margin-top: -100px;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+		.contenutoalt{
+		text-align:center;
+		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 25px;
+		color: black;
+		margin-top: -100px;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+		.contenuto1{
+		text-align:center;
+		font-family:  "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 25px;
+		color: white;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+		div#countdown{
+		width: 100%;
+		height: 350px;
+		background-image: url('');
+		margin-bottom: 60px;
+		padding-top: 150px;
+		/*https://thumbs.dreamstime.com/b/antecedentes-m%C3%A9dicos-cient%C3%ADficos-de-alta-calidad-en-nanotecnolog%C3%ADa-estructura-molecular-ilustraci%C3%B3n-d-la-celda-cristal-202144520.jpg*/
+		}
+		div#home{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		background-image: url('');
+		}
+		div#audit{
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		background-image: url('');
+		}
+			}
+		.row-left-menu{
+		}
+		.row-right-menu{
+		}
+		.team{
+					width:19.8%;
+					height:325px;
+					background-color: #a3663699;
+					margin-left: 1.5px;
+					margin-top:	10px;
+			                border-radius: 20px;
+		}
+		div.clock-right{
+							margin-top: 0px;
+							width: 100%;
+							height: 350px;
+							background-color: rgb(223 0 22 / 70%);
+							float:left;
+							border-radius: 20px;
+							}
+		div.clock-left{
+						width: 20%;
+						height:350;
+						}
+		ul#menu li {
+						float: left; /* elementi su singola riga */
+						list-decoration: none;
+					}
+		ul#menu li a{
+				    color: #fff;
+				    display: block;
+				    font-weight: bold;
+				    line-height: 30px;
+				    text-decoration: none;
+				    width: auto;
+				    height: 30px;
+				    text-align: center;
+				    margin: 2em;
+				    margin-top: -0.5em;
+					}
+			ul#menu {
+			list-style: none;
+			font-size: 1em;
+			text-transform: uppercase;
+			}
+		div#menu0{
+		margin-left:20%;
+		}
+		h1{
+		color: white;
+		text-align: center;
+		}
+		h2{
+		color: #034694;
+		text-align: center;
+		}
+		p.line{
+		color: white;
+		font-size: 120px;
+		margin-top: -80px;
+		}
+		p.line-out{
+		color: white;
+		font-size: 120px;
+		margin-top: -80px;
+		text-align: center;
+		margin-bottom: -10px;
+		}
+		div#logo{
+		margin-left: 50px;
+		}
+			button{
+		width: 400px;
+		height: 40px;
+		background-color: white;
+		border-radius: 5px;
+		border: black;
+		color: black;
+		box-shadow: 5px 5px 5px;
+		}
+		#clockdiv{
+						font-family: sans-serif;
+						color: black;
+						display: inline-block;
+						font-weight: 100;
+						text-align: center;
+						font-size: 100px;
+					}
+
+					#clockdiv > div{
+						padding: 10px;
+						border-radius: 3px;
+						background: rgb(223 0 22 / 1);
+						display: inline-block;
+					}
+
+					#clockdiv div > span{
+						padding: 15px;
+						border-radius: 3px;
+						background: white;
+						display: inline-block;
+					}
+
+					.smalltext{
+						padding-top: 5px;
+						font-size: 30px;
+					}
+					
+					.timeline {
+							  position: relative;
+							  width: 100%;
+							  max-width: 1140px;
+							  margin: 0 auto;
+							  padding: 15px 0;
+							}
+
+							.timeline::after {
+							  content: '';
+							  position: absolute;
+							  width: 5px;
+							  background: white;
+							  top: 0;
+							  bottom: 0;
+							  left: 50%;
+							  margin-left: -1px;
+							}
+
+							.container {
+							  position: relative;
+							  background: inherit;
+							  width: 50%;
+							}
+
+							.container.left {
+							  left: 0;
+							}
+
+							.container.right {
+							  left: 50%;
+							}
+
+							.container::after {
+							       content: '';
+							    position: absolute;
+							    width: 10px;
+							    height: 15px;
+							    top: calc(50% - 8px);
+							    right: -8px;
+							    background: #ffffff;
+							    border: 2px solid white;
+							    border-radius: 16px;
+							    z-index: 1;
+							}
+
+							.container.right::after {
+							  left: -6px;
+							}
+
+							.container::before {
+							     content: '';
+							    position: absolute;
+							    width: 50px;
+							    height: 5px;
+							    top: calc(50% - 1px);
+							    right: 6px;
+							    background: white;
+							    z-index: 1;
+							}
+
+							.container.right::before {
+							  left: 8px;
+							}
+
+							.container .date {
+							     position: absolute;
+							    display: inline-block;
+							    top: calc(50% - 8px);
+							    font-size: 25px;
+							    font-weight: bold;
+							    color: white;
+							    text-transform: uppercase;
+							    letter-spacing: 6px;
+							    z-index: 1;
+							}
+
+							.container.left .date {
+							     right: -150px;
+							}
+
+							.container.right .date {
+							     left: -150px;
+							}
+
+							.container .icon {
+							   position: absolute;
+							    display: inline-block;
+							    width: 20px;
+							    height: 40px;
+							    padding: 0px 0;
+							    top: calc(50% - 20px);
+							    background: #F6D155;
+							    border: 4px solid #034694;
+							    border-radius: 40px;
+							    text-align: center;
+							    font-size: 15px;
+							    color: white;
+							    z-index: 1;
+							}
+
+							.container.left .icon {
+							  right: 56px;
+							}
+
+							.container.right .icon {
+							  left: 56px;
+							}
+
+							.container .content {
+							  padding: 30px 90px 30px 30px;
+							  background: #F6D155;
+							  position: relative;
+							  border-radius: 0 500px 500px 0;
+							}
+
+							.container.right .content {
+							  padding: 30px 30px 30px 90px;
+							  border-radius: 500px 0 0 500px;
+							}
+
+							.container .content h2 {
+							  margin: 0 0 10px 0;
+							  font-size: 20px;
+							  font-weight: bold;
+							  color: #034694;
+							}
+
+							.container .content p {
+							  margin: 0;
+							  font-size: 16px;
+							  line-height: 22px;
+							  color: #000000;
+							}
+
+							@media (max-width: 767.98px) {
+							  .timeline::after {
+							    left: 90px;
+							  }
+
+							  .container {
+							    width: 100%;
+							    padding-left: 120px;
+							    padding-right: 30px;
+							  }
+
+							  .container.right {
+							    left: 0%;
+							  }
+
+							  .container.left::after, 
+							  .container.right::after {
+							    left: 82px;
+							  }
+
+							  .container.left::before,
+							  .container.right::before {
+							    left: 100px;
+							    border-color: transparent #006E51 transparent transparent;
+							  }
+
+							  .container.left .date,
+							  .container.right .date {
+							    right: auto;
+							    left: 15px;
+							  }
+
+							  .container.left .icon,
+							  .container.right .icon {
+							    right: auto;
+							    left: 146px;
+							  }
+
+							  .container.left .content,
+							  .container.right .content {
+							    padding: 30px 30px 30px 90px;
+							    border-radius: 500px 0 0 500px;
+							  }
+							}
+			h3{
+			align: center;
+			color:white;
+			}
+			div#social{
+			width: 100%;
+			height: auto;
+			background-color: rgb(0,0,0,0,80);
+				div#socials{
+				float:left;
+				}
+			}
+			div.row-superior.socials{
+			width: 100%;
+			heigth: 60px;
+			background-color = rgb(0,0,0,0.70)
+			}
+			ul#socials li{
+				list-decoration: none;
+				float: left;
+				margin-right: 20px;
+			}
+			ul#socials {
+			list-style: none;
+			}
+				}
+			ul#nav {
+			list-style: none;
+			}
+			ul#nav li{
+			font-size: 1em;
+    			margin-bottom: 1em;
+			}
+			ul#nav li a{
+			color: white;
+    			text-decoration: none;
+			font-size: 2 em;
+			}
+			label#progress {
+				    font-size: 1rem;
+				}
+
+	</style>
+	</head>
+	<body>
+	<!--/* Start header-->
+		<div id="header">
+					<div id="logo" style="float:left;">
+						<img src="https://sc04.alicdn.com/kf/HTB1jQ9KRXXXXXc3XXXX760XFXXXk.png" style="width: 130px;margin-top: -43px;margin-left: 10px;">
+					</div>
+			
+					<div id="menu0">
+						 <ul id="menu">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#whitepaper">WhitePaper</a></li>
+							<li><a href="#tokenomics">Tokenomics</a></li>
+							<li><a href="#audit">Audit</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#roadMap">RoadMap</a></li>
+							<li><a href="#">Join To Presale</a></li>
+			</ul></div>
+		</div>
+	<!--*/end header-->
+			
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <div style="
+"><img src="https://sc04.alicdn.com/kf/HTB1jQ9KRXXXXXc3XXXX760XFXXXk.png" style="width: 10%;margin-left: 45%;">
+	
+	
+
+	    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" width="50px" height="50px">
+ 	 </a>
+</div>	
+</div>
+  <div id="myLinks" style="text-align: center; display: none;">
+	  <ul id="nav" style="list-style: none;">
+							<li><a style="font-size: 2em;" href="#fome">Home</a>
+							</li><li><a style="font-size: 2em;" href="#whitepaper">WhitePaper</a>
+							</li><li><a style="font-size: 2em;" href="#tokenomics">Tokenomics</a>
+							</li><li><a style="font-size: 2em;" href="#audit">Audit</a>
+							</li><li><a style="font-size: 2em;" href="#team">Team</a>
+							</li><li><a style="font-size: 2em;" href="#roadMap">RoadMap</a>
+							</li><li><a style="font-size: 2em;" href="#">Join To Presale</a>
+							</li><li><a href=""><img class="icon" src="https://it.seaicons.com/wp-content/uploads/2015/06/Facebook-icon4.png"></a>
+							<a href=""><img class="icon" src="https://cdn.icon-icons.com/icons2/1584/PNG/128/3721672-instagram_108066.png"></a>
+							<a href=""><img class="icon" src="https://it.seaicons.com/wp-content/uploads/2015/06/twitter-icon.png"></a></li>
+	  </ul>
+	</div>
+
+<!-- End smartphone / tablet look -->
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+			
+	<!--*/start countdown-->
+	<div id="countdown" class="fade-in-animation">
+		<div class="row-superior">
+				<div class="clock-right fade-in" style="
+">
+				<h1 id="h1">Countdown Clock:</h1>
+				<br>
+						<p class="contenuto1 fade-in-animationtext"> 
+							Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+				<br>	
+				<br>
+					
+					<div id="clockdiv" class="clock fade-in-animationtext">
+					  <div style="border-radius: 20px;">
+						<span class="days">14</span>
+						<div class="smalltext">Days</div>
+					  </div>
+					  <div style="border-radius: 20px;">
+						<span class="hours">23</span>
+						<div class="smalltext">Hours</div>
+					  </div>
+					  <div style="border-radius: 20px;">
+						<span class="minutes">52</span>
+						<div class="smalltext">Minutes</div>
+					  </div>
+					  <div style="border-radius: 20px;">
+						<span class="seconds">56</span>
+						<div class="smalltext">Seconds</div>
+					  </div>
+					</div>
+					<script>
+					
+
+  function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+					</script>
+				</div>
+		</div>
+	</div>
+	<!--*/end countdown-->
+	<!--*/progress bar-->
+		<div id="progresso" class="fade-in-animation" style="
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background: rgb(223 0 22 / 70%);
+    border-radius: 20px;
+    padding: 5%;
+">
+<div id="interno-destra">
+						<label id="progress" for="file" style="
+			    color: white;
+			    font-variant: petite-caps;
+			    font-size: 2em;
+			">Raised fund</label>
+						<br>
+						<progress id="file" max="100" value="70" style="
+			    margin-bottom: 2%;
+			    margin-top: 5%;
+			    width: 80%;
+			    height: 2%;"> 70% </progress>
+						<br>
+						<h1>Total Found: € 3.000.000</h1>
+						<br>
+						<h1>Raised Found: € 2.100.000</h1>
+						<br>
+						<h1>Found Left: € 900.000</h1>
+						<br>
+						<Button>Join to Pre-sales</Button>
+</div>
+<div id="interno-sinistra">
+	<h1> How to Buy LegnanoCoin </h1>
+</div>
+			</div>
+	<!--*/end progresbar -->
+	<br>
+	<br>
+	<!--*/start home-->
+	<div id="home" class="fade-in-animation">
+		<div class="row-superior fade-in">
+			<div class="row-left fade-in">
+			<h1>The project</h1>
+			<p class="line">---</p>
+			<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<button style="
+    animation: 5s ease 0s normal forwards 1 fadein;
+"><b> Telegram </b></button>
+			</div>
+			<div class="row-right fade-in" style="
+    animation: 2s ease 0s normal forwards 1 fadein;
+">
+			<img src="https://sc04.alicdn.com/kf/HTB1jQ9KRXXXXXc3XXXX760XFXXXk.png" style="width: 396px; height:auto; margin-top: 48px;">
+				<div class="contentrow">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--*/end home-->
+	<br>
+	<br>
+	<!--*/start whitepaper-->
+	<div id="whitepaper" style="
+">
+		<div class="row-superior fade-in-animation">
+			<div class="row-left-alt fade-in">
+			<img src="unnamed-removebg-preview.png" style="width:250px; heigth:290px; margin-bottom: 150px;">
+			<p class="contenutoalt"> A document released by a crypto project that gives investors technical information about its concept</p>
+			</div>
+			<div class="row-right-alt fade-in">
+			<h1>Whitepaper</h1>
+			<p class="line">---</p>
+			<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<button style="
+    animation: 5s cubic-bezier(0.4, 0, 1, 1) 0s normal forwards 1 fadein;
+">White Paper</button>
+			</div>
+		</div>
+	</div>
+	<!--*/end whitepaper-->
+	<br>
+	<br>
+	<!--*/start tokenomics-->
+	<div id="tokenomics" class="fade-in-animation">
+		<div class="row-superior fade-in-animation">
+			<div class="row-left fade-in">
+			<h1>Tokenomics</h1>
+			<p class="line">---</p>
+			<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<br>
+			<button style="
+    animation: 5s ease 0s normal forwards 1 fadein;
+">Tokenomics</button>
+			</div>
+			<div class="row-right fade-in" style="
+    animation: 2s ease 0s normal forwards 1 fadein;
+">
+				<img src="https://docs.solanium.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-MXTV5b4UKirD4lES_W4%2F-MZDd4WenYTTzsB4iHnQ%2F-MZDdYSF8YfQYzmFun6Z%2FPie%20chart.png?alt=media&amp;token=fbae0a26-c3c8-4cdf-ad26-4118199e9888" style="width:385.59px; height:400px;">
+			</div>
+		</div>
+	</div>
+	<!--*/end tokenomics-->
+	<br>
+	<br>
+	<!--*/start audit-->
+	<div id="audit" class="fade-in-animation">
+		<div class="row-superior fade-in-animation">
+			<div class="row-left-alt fade-in" style="
+    animation: 2s ease 0s normal forwards 1 fadein;
+">
+			<img src="2087856_40b0e3fde80ddd71450740d687c4a064-removebg-preview.png" style="width:250px; height: 290px; margin-bottom: 100px;">
+			<p class="contenutoalt">A smart contract audit is an extensive methodical examination and analysis of a smart contract's code that is used to interact with a cryptocurrency or blockchain. </p>
+			</div>
+			<div class="row-right-alt fade-in">
+				<h1>Audit</h1>
+				<p class="line">---</p>
+				<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			    <br>
+				<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+				<br>
+				<button style="
+    animation: 5s ease 0s normal forwards 1 fadein;
+">Audit</button>
+			</div>
+		</div>
+	</div>
+	<!--*/end audit-->
+	<br>
+	<br>
+	<!--*/start team-->
+	<div id="team" style="
+    animation: 5s ease 0s normal forwards 1 fadein;
+" class="fade-in-animation">
+	<br>
+	<br>
+	<h1>The Team</h1>
+	<p class="line-out">---</p>
+		<div class="row-superior fade-in-animation">
+			<div class="team" style="float:left;">
+			<h1>Tizio</h1>
+			<div class="imgteam">
+			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width:250px; heigth:290px;">
+			</div>
+			<br>
+			<div class="contenuto1 fade-in-animationtext">
+			CEO
+			</div>
+			</div>
+			<div class="team" style="float:left;">
+			<h1>Tizio</h1>
+			<div class="imgteam">
+			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width: 100%; height: 150px;">
+			</div>
+			<br>												 
+			<div class="contenuto1 fade-in-animationtext2">
+			MARKETING CHEF
+			</div>
+			</div>
+			<div class="team" style="float:left;">
+			<h1>Tizio</h1>
+			<div class="imgteam">
+			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width: 100%; height: 150px;">
+			</div>
+			<br>
+			<div class="contenuto1 fade-in-animationtext3">
+			HUMAN RESOURCES
+			</div>
+			</div>
+			<div class="team" style="float:left;">
+			<h1>Tizio</h1>
+			<div class="imgteam">
+			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width: 100%; height: 150px;">
+			</div>
+			<br>												   
+			<div class="contenuto1 fade-in-animationtext4">
+			CTO
+			</div>
+			</div>
+			<div class="team" style="float:left;">
+			<h1>Tizio</h1>
+			<div class="imgteam">
+			<img src="https://www.pngplay.com/wp-content/uploads/9/Elon-Musk-PNG-Clipart-Background.png" style="width: 100%; height: 150px;">
+			</div>
+			<br>	
+			<div class="contenuto1 fade-in-animationtext5">
+			SUPPORT
+			</div>
+			</div>
+		</div>
+	</div>
+	<!--*/end team-->
+	<!--*/start roadmap-->
+	<div id="roadmap" style="
+    animation: 10s ease 0s normal forwards 1 fadein;
+" class="class=" fade-in-animation"="">
+	<br>
+	<br>
+	<h1>RoadMap</h1>
+	<p class="line-out">---</p>
+	<div class="timeline fade-in">
+  <div class="container left fade-in">
+    <div class="date fade-in">15 Dec</div>
+    <i class="icon fa fa-home fade-in"></i>
+    <div class="content fade-in">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container right fade-in">
+    <div class="date fade-in">22 Oct</div>
+    <i class="icon fa fa-gift fade-in"></i>
+    <div class="content fade-in">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container left fade-in">
+    <div class="date fade-in">10 Jul</div>
+    <i class="icon fa fa-user fade-in"></i>
+    <div class="content fade-in">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container right fade-in">
+    <div class="date fade-in">18 May</div>
+    <i class="icon fa fa-running fade-in"></i>
+    <div class="content fade-in">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container left fade-in">
+    <div class="date fade-in">10 Feb</div>
+    <i class="icon fa fa-cog fade-in"></i>
+    <div class="content fade-in">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+  <div class="container right fade-in">
+    <div class="date fade-in">01 Jan</div>
+    <i class="icon fa fa-certificate fade-in"></i>
+    <div class="content fade-in">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+      </p>
+    </div>
+  </div>
+</div>
+	</div>
+	<!--*/end roadmap-->
+	<br>
+	<!--*/startfooter-->
+	<div id="footer">
+	<h3>Tkrev-TokenRevolution s.r.l.s-Allright@ Reserved</h3>
+	</div>
+	<!--*/end footer-->
+	<!--social-->
+	<div id="social">
+		<div class="row-superior.socials fade-in-animation">
+			<div class="row-left-socials fade-in" style="float:left;">
+			<h1>Legananocoin@legnanocoin.com</h1>
+			</div>
+			<div class="row-right-socials fade-in" style="float:left;">
+			<div class="contentrow">
+			<ul id="socials">
+				<li><a href=""><img class="icon" src="https://it.seaicons.com/wp-content/uploads/2015/06/Facebook-icon4.png"></a></li>
+				<li><a href=""><img class="icon" src="https://cdn.icon-icons.com/icons2/1584/PNG/128/3721672-instagram_108066.png"></a></li>
+				<li><a href=""><img class="icon" src="https://it.seaicons.com/wp-content/uploads/2015/06/twitter-icon.png"></a></li>
+				<li><a href="privacy.html" style="
+    border: 3px solid #df0016;
+    border-radius: 20px;
+    background: white;
+    color: #df0016;
+    text-decoration: none;
+">Privacy</a></li>
+			</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script>
+
+	// non devi toccare più nulla, solo aggiungere fade-in-animation e fade-in
+	//li dove vuoi attivare le animazioni
+	// per modificare le animazioni vai ad inizio pagina e modifica @keyframes
+		const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+	if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('fade-in-animation');
+    }
+
+  });
+});
+
+var boxElList  = document.querySelectorAll('.fade-in');
+boxElList.forEach((el) => {
+	observer.observe(el);
+})
+
+			</script>
+</body></html>

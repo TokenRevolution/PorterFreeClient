@@ -1,0 +1,84 @@
+	@media screen and (max-width: 3841px) {
+			  .clock-right {
+			    height: 135em !important;
+			  }
+			 .contenuto1 {
+			            text-align: center;
+				    font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+				    font-size: 25px;
+				    color: white;
+				    margin-left: 20px;
+				    margin-right: 20px;
+			  }
+			}
+			@media screen and (max-width: 1921px) {
+			    .clock-right {
+			            height: 45em !important;
+				    width: 60em !important;
+				    margin-bottom: 5em;
+			    }
+			    .contenuto1 {
+			            text-align: center;
+				    font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+				    font-size: 46px;
+				    color: white;
+				    margin-left: 20px;
+				    margin-right: 20px;
+			  }
+				.contenuto {
+			 	    text-align: center;
+				    font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+				    font-size: 46px;
+				    color: white;
+				    margin-left: 20px;
+				    margin-right: 20px;
+				}
+				#clockdiv {
+				    font-family: sans-serif;
+				    color: #fff;
+				    display: inline-block;
+				    font-weight: 100;
+				    text-align: center;
+				    font-size: 100px;
+				}
+				.smalltext {
+				    padding-top: 5px;
+				    font-size: 34px;
+				}
+			#h1 {
+				    color: white;
+				    text-align: center;
+				    font-size: 60px;
+				}
+			.row-superior{
+				    height: 500px;
+				    width: 100%;
+				    text-align: center;
+				}
+			  }  
+			  @media screen and (max-width: 769px) {
+			    .clock-right {
+			      height: 25em !important;
+			    }
+			 .contenuto1 {
+			            text-align: center;
+				    font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+				    font-size: 25px;
+				    color: white;
+				    margin-left: 20px;
+				    margin-right: 20px;
+			  }
+			  }
+			  @media screen and (max-width: 400px) {
+			    .clock-right {
+			      height: 25em !important;
+			 .contenuto1 {
+			            text-align: center;
+				    font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+				    font-size: 25px;
+				    color: white;
+				    margin-left: 20px;
+				    margin-right: 20px;
+			  }
+			    }
+  }

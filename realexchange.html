@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <title>Exchange LeganoCoin </title>
+    <style>
+      #rowbuy{
+            height: auto;
+            text-align: center;
+            border: 1px solid black;
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background: rgb(255 0 0 / 70%);
+            border-radius: 20px;
+      }
+      #rowsell{
+            height: auto;
+            text-align: center;
+            border: 1px solid black;
+            width: 50%;
+            margin-left: 25%;
+            background: rgb(255 0 0 / 70%);
+            border-radius: 20px;
+      }
+      #legnanotokensection{
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
+      }
+      #BUSDsection{
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
+      }
+      body {
+      background-image: url(https://www.sempionenews.it/wp-content/uploads/2020/08/legnano-di-notte.jpg);
+      background-repeat: no-repeat;
+      }
+      button.enableEthereumButton{
+                width: auto;
+                height: auto;
+                border-radius: 10%;
+                font-size: 2em;
+                background-color: #ff7f01;
+                border: 2px solid black;
+                margin-bottom: 1%;
+      }
+       button.showAccount{
+                width: auto;
+                height: auto;
+                border-radius: 10%;
+                font-size: 1em;
+                background-color: rgb(255 0 0 / 70%);
+                border: 2px solid black;
+                margin-bottom: 2%;
+      }
+      #connect{
+      width: auto;
+      height: auto;
+      text-align: center;
+      }
+      .sendEthButton{
+          width: 30%;
+          height: 5%;
+          margin-top: 3%;
+          border-radius: 10px;
+          background: rgb(14 38 86);
+      }
+            .sendEthButton2{
+          width: 30%;
+          height: 5%;
+          margin-top: 3%;
+          border-radius: 10px;
+          background: rgb(14 38 86);
+        }
+      }
+    </style>
+  </head>
+  <body>
+  <div id="Connect">  
+  <button class="enableEthereumButton btn">Connect</button>
+  <br>
+  <button class="showAccount">Show account</button>
+  <br>
+  </div>
+    
+    <div id="rowbuy">
+            <div id="BUSDsection">
+              <lable>Amount of BUSD:</lable>
+              <input type="number" id="Buy" value="0">
+            </div>
+            <div id="Legnanotokensection">
+              <lable> You will have: <label type="number" id="BuyL">XXXX</label> LeganoCoin </lable>
+              <br>
+               <button class="sendEthButton btn">BUY</button>
+            </div>
+    </div>
+    <div id="rowsell">
+            <div id="Legnanotokensection">
+              <lable>Amount of LegnanoCoin</lable>
+              <input type="number" id="Sell" value="0">
+            </div>
+            <div id="BUSDsection">
+               <lable> You will have: <label type="number" id="SellL">XXXX</lable> BUSD </lable>
+               <br>
+               <button class="sendEthButton2 btn">SELL</button>
+            </div>
+    </div>
+  
+      <script>
+const Buy = document.getElementById('Buy');
+const BuyL = document.getElementById('BuyL');
+const Sell = document.getElementById('Sell');
+const SellL = document.getElementById('SellL');
+Buy.addEventListener("change", function() {BuyL.innerHTML= Buy.value*1});
+Sell.addEventListener("change", function() {SellL.innerHTML= Sell.value*1});
+        
+const ethereumButton = document.querySelector('.enableEthereumButton');
+const sendEthButton = document.querySelector('.sendEthButton');
+const send2 = document.querySelector('.sendEthButton2');
+const showAccount = document.querySelector('.showAccount');
+
+let accounts = [];
+
+//Sending Ethereum to an address
+sendEthButton.addEventListener('click', () => {
+  ethereum
+    .request({
+      method: 'eth_sendTransaction',
+      params: [
+        {
+          from: accounts[0],
+          to: '0xdFb596E93189D8E7b3FfEd525FC838D48e2DcdFC',
+          value: (BuyL.innerHTML*1000000000000000000).toString(16),
+          gasPrice: '0x400746fe000',
+          gas: '0x5208',
+        },
+      ],
+    })
+    .then((txHash) => console.log(txHash))
+    .catch((error) => console.error);
+});
+    //Sending Ethereum to an address
+    send2.addEventListener('click', () => {
+      ethereum
+        .request({
+          method: 'eth_sendTransaction',
+          params: [
+            {
+              from: accounts[0],
+              to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+              value: (SellL.innerHTML*1000000000000000000).toString(16),
+              gasPrice: '0x400746fe000',
+              gas: '0x5208',
+            },
+          ],
+        })
+        .then((txHash) => console.log(txHash))
+        .catch((error) => console.error);
+    });
+
+ethereumButton.addEventListener('click', () => {
+  getAccount();
+});
+
+async function getAccount() {
+  accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  const account = accounts[0];
+  showAccount.innerHTML = account;
+}
+    </script>
+  </body>
+</html>
