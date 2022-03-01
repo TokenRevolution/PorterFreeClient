@@ -1,94 +1,7 @@
 <html><head>
 	<title>PorterFreeToken</title>
 	<script src="lib/intersection-observer/intersection-observer.js"></script>
-		<style>
-			section#sec{
-height:100%;
-width:100%;
-display: contents;
-}
-.leaf{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.leaf div{
-position:absolute ;
-display:block ;
-}
-.leaf div:nth-child(1){
-    left:20%; 
-    animation:fall 15s linear infinite ;
-    animation-delay:-2s;
-
-}
-.leaf div:nth-child(2){
-    left:70%; 
-    animation:fall 15s linear infinite ;
-    animation-delay:-4s;
-}
-.leaf div:nth-child(3){
-    left:10%; 
-    animation:fall 20s linear infinite ;
-    animation-delay:-7s;
-    
-}
-.leaf div:nth-child(4){
-    left:50%; 
-   animation:fall 18s linear infinite ; 
-   animation-delay:-5s;
-}
-.leaf div:nth-child(5){
-    left:80%; 
-    animation:fall 14s linear infinite ;
-    animation-delay:-5s;
-}
-.leaf div:nth-child(6){
-    left:30%; 
-    animation:fall 16s linear infinite ;
-    animation-delay:-10s;
-}
-.leaf div:nth-child(7){
-    left:90%; 
-    animation:fall 15s linear infinite ;
-    animation-delay:-4s;
-}
-
-@keyframes fall{
-    0%{
-        opacity:1;
-        top:-10%;
-        transform:translateX (20px) rotate(0deg);
-    }
-    20%{
-        opacity:0.8;
-        transform:translateX (-20px) rotate(45deg);
-    }
-    40%{
-
-        transform:translateX (-20px) rotate(90deg);
-    }
-    60%{
-        
-       transform:translateX (-20px) rotate(135deg); 
-    }
-    80%{
-    
-        transform:translateX (-20px) rotate(180deg);
-    }
-    100%{
-        
-        top:110%;
-        transform:translateX (-20px) rotate(225deg);
-    }
-    }
-.leaf1{
-    transform: rotateX(180deg);
-}
-			
+		<style>		
 			
 
 			@keyframes wipe-enter {
@@ -898,126 +811,17 @@ function myFunction() {
   }
 }
 </script>
-
-			
-	<!--*/start countdown-->
-	<div id="countdown" class="fade-in-animation">
-		<div class="row-superior">
-				<div class="clock-right fade-in" style="
-">
-				<h1 id="h1">Countdown Clock:</h1>
-				<br>
-						<p class="contenuto1 fade-in-animationtext"> 
-							Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-				<br>	
-				<br>
-					
-					<div id="clockdiv" class="clock fade-in-animationtext">
-					  <div style="border-radius: 20px;">
-						<span class="days">14</span>
-						<div class="smalltext">Days</div>
-					  </div>
-					  <div style="border-radius: 20px;">
-						<span class="hours">23</span>
-						<div class="smalltext">Hours</div>
-					  </div>
-					  <div style="border-radius: 20px;">
-						<span class="minutes">52</span>
-						<div class="smalltext">Minutes</div>
-					  </div>
-					  <div style="border-radius: 20px;">
-						<span class="seconds">56</span>
-						<div class="smalltext">Seconds</div>
-					  </div>
-					</div>
-					<script>
-					
-
-  function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
-					</script>
-				</div>
-		</div>
-	</div>
-	<!--*/end countdown-->
-	<!--*/progress bar-->
-		<div id="progresso" class="fade-in-animation">
-			<div id="interno-destra">
-						<label id="progress" for="file" style="
-			    color: white;
-			    font-variant: petite-caps;
-			    font-size: 2em;
-			">Raised fund</label>
-						<br>
-						<progress id="file" max="100" value="70" style="
-			    margin-bottom: 2%;
-			    margin-top: 5%;
-			    width: 80%;
-			    height: 2%;"> 70% </progress>
-						<br>
-						<h1>Total Found: € 3.000.000</h1>
-						<br>
-						<h1>Raised Found: € 2.100.000</h1>
-						<br>
-						<h1>Found Left: € 900.000</h1>
-						<br>
-						<Button>Join to Pre-sales</Button>
-</div>
-<div id="interno-sinistra">
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/-gAJIFbDT0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-			</div>
-	<!--*/end progresbar -->
 	<br>
 	<br>
 	<!--*/start home-->
 	<div id="home" class="fade-in-animation">
 		<div class="row-superior fade-in">
 			<div class="row-left fade-in">
-			<h1>The project</h1>
+			<h1>PROJECT</h1>
+			<h1>ALL ABOUT</h1>
 			<p class="line">---</p>
-			<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
-			<br>
-			<p class="contenuto1 fade-in-animationtext2"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
+			<p class="contenuto fade-in-animationtext"> Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper. 
+			Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper,  Estratto White Paper.</p> 
 			<br>
 			<button style="
     animation: 5s ease 0s normal forwards 1 fadein;
@@ -1299,40 +1103,5 @@ boxElList.forEach((el) => {
 
 			</script>
 
-   <section id="sec">
-     <div class="leaf">
-     <div>  <img src="logoan.png" height="75px" width="75px"></img></div>
-      <div><img src="logoan.png" height="75px" width="75px"></img></div>
-      <div>  <img src="logoan.png" height="75px" width="75px" ></img></div>
-      <div><img  src="logoan.png" height="75px" width="75px"></img></div>
-       <div> <img src="logoan.png" height="75px" width="75px"></img></div>
-     <div>   <img src="logoan.png" height="75px" width="75px"></div>
-     <div><img src="logoan.png" height="75px" width="75px"></div>
-            
-     </div>
-     
-     <div class="leaf leaf1">
-     <div>  <img src="logoan.png" height="75px" width="75px"></img></div>
-      <div><img src="logoan.png" height="75px" width="75px"></img></div>
-      <div>  <img src="logoan.png" height="75px" width="75px" ></img></div>
-      <div><img  src="logoan.png" height="75px" width="75px"></img></div>
-       <div> <img src="logoan.png" height="75px" width="75px"></img></div>
-     <div>   <img src="logoan.png" height="75px" width="75px"></div>
-     <div><img src="logoan.png" height="75px" width="75px"></div>
-            
-     </div>
-     
-     <div class="leaf leaf2">
-     <div>  <img src="logoan.png" height="75px" width="75px"></img></div>
-      <div><img src="logoan.png" height="75px" width="75px"></img></div>
-      <div>  <img src="logoan.png" height="75px" width="75px" ></img></div>
-      <div><img  src="logoan.png" height="75px" width="75px"></img></div>
-
-       <div> <img src="logoan.png" height="75px" width="75px"></img></div>
-     <div>   <img src="logoan.png" height="75px" width="75px"></div>
-     <div><img src="logoan.png" height="75px" width="75px"></div>
-        
-     </div>
-     </section>
  </body>
  </html>
